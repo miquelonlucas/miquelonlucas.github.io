@@ -50,8 +50,99 @@ table {
 
 /* here your code starts */
 
-.header-logo {
+*{
     font-family: 'Roboto', sans-serif;
-    font-style: 900;
-    font: 18px #2A2A2A;
+}
+
+#header{
+    height: 84px;
+    width: 100%;
+    border: 1px solid #BDBDBD;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #e9e9e9;
+}
+
+#header-logo, #header-side-logo, .header-items{
+    font-family: 'Roboto', sans-serif;
+}
+
+#header-logo, #header-side-logo{
+    font-size: 34px;
+    font-weight: 900;
+}
+
+#header-logo {
+    color: #272727;
+    -webkit-text-stroke: 1px #272727;
+    margin-left: calc(8% - 12px);
+}
+#header-logo:hover {
+    color: #ffffff;
+}
+
+#header-side-logo{
+    color: #ffffff;
+    -webkit-text-stroke: 1px #272727;
+    margin: 2px;
+    margin-right: 20px;
+}
+
+#header-side-logo:hover{
+    color: #272727;
+}
+
+.header-items{
+    margin-left: 2%;
+    font-size: 20px;
+}
+
+.header-items:hover{
+    color: rgb(207, 28, 126);
+    -webkit-text-stroke: 0.3px #e2e2e2;
+    
+    cursor: pointer;
+}
+
+.header-items:active{
+    color: rgb(255, 136, 152);
+}
+
+#header-logo:hover, #header-side-logo:hover{
+    cursor: default;
+}
+
+.example{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-row{
+    width: 80%;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.projects-row img{
+    width: 320px;
+    border: 1px solid #BDBDBD;
+}
+
+.projects-row p{
+    font-weight: 700;
+    margin-top: 8px;
+    font-size: 18px;
+    color: #272727;
+}
+
+.projects-row img:hover{
+    transition: .5s ease;
+    opacity: 0.5;
+}
+
+.projects-row p:hover{
+    cursor: default;
 }
