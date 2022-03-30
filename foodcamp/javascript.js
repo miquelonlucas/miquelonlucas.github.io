@@ -3,11 +3,6 @@ function boxclick(objetoClicado, objetoSelecionado){
     const selecao = objetoSelecionado + ' .caixaSelecionada';
     const selecionadoAnterior = document.querySelector(selecao);
 
-    // console.log(selecao);
-    // console.log(objetoSelecionado)
-    // console.log(objetoClicado)
-    // console.log(selecionadoAnterior)
-
 
     if (selecionadoAnterior !== null){
         selecionadoAnterior.classList.remove('caixaSelecionada');
@@ -15,4 +10,23 @@ function boxclick(objetoClicado, objetoSelecionado){
     
     const caixa = document.querySelector(objetoClicado);
     caixa.classList.add('caixaSelecionada');
+
 }
+
+function verify() {
+    let prato = document.querySelector('#prato-row .caixaSelecionada');
+    let bebida = document.querySelector('#bebida-row .caixaSelecionada');
+    let sobremesa = document.querySelector('#sobremesa-row .caixaSelecionada');
+    
+    const cart = document.querySelector('.carrinho');
+    
+    if(prato !== null){
+        if(bebida !== null){
+            if(sobremesa !== null){
+                cart.classList.add('carrinho-cheio');
+            }
+        }
+    }
+}
+
+setInterval(verify,300);
