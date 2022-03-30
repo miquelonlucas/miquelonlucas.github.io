@@ -22,8 +22,8 @@
 
 .prato{
     background-color: #E5E5E5;
-    box-shadow: inset 0 2px 4px 0 #535353;
-    height: 100vh;
+    /* box-shadow: inset 0 2px 4px 0 #535353; */
+    /* height: 100vh; */
 }
 
 #texto-prato{
@@ -37,6 +37,7 @@
     display: flex;
     padding-left: 3px;
     flex-direction: row;
+    overflow-x: scroll;     
 }
 
 .box:hover{
@@ -47,9 +48,11 @@
 
 
 .caixaSelecionada{
-    margin: -5px 0 0 -5px;
-    border: 5px solid #00dd00;
+    padding: 0 0 0 -4px;
+    border: 4px solid #00dd00;
     color: #00dd00;
+    box-sizing: content-box;
+    margin-top: -1px;
 }
 
 .box{
@@ -61,6 +64,7 @@
     box-shadow: 3px #333333;
     display: flex;
     flex-direction: column;
+    margin-top: 4px;
 }
 
 .product{
@@ -97,4 +101,63 @@
     font-size: 16px;
     color: #000000;
     margin-top: 8px;
+}
+
+.bebida{
+    background-color: #E5E5E5;
+    /* box-shadow: inset 0 2px 4px 0 #535353; */
+    /* height: 100vh; */
+}
+
+#texto-bebida{
+    font-family: 'Righteous', sans-serif;
+    font-size: 26px;
+    color: #333333;
+    padding: 31px 0 17px 19px;
+}
+
+#bebida-row{
+    display: flex;
+    padding-left: 3px;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+.sobremesa{
+    background-color: #E5E5E5;
+    /* box-shadow: inset 0 2px 4px 0 #535353; */
+    height: 330px;
+}
+
+#texto-sobremesa{
+    font-family: 'Righteous', sans-serif;
+    font-size: 26px;
+    color: #333333;
+    padding: 31px 0 17px 19px;
+}
+
+#sobremesa-row{
+    display: flex;
+    padding-left: 3px;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+#footer{
+    height: 158px;
+    width: 100vw;
+    background-color: #FFFFFF;
+}
+
+.carrinho{
+    margin: auto;
+    height: 61px;
+    /* padding: auto; */
+    border-radius: 30.5px;
+    background-color: #615d5d;
+}
+
+.texto-carrinho{
+    font-family: 'Roboto', sans-serif;
+    font: 500 20px #FFFFFF;
+    padding: auto;
 }
