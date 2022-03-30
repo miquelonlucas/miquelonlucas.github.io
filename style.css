@@ -154,10 +154,14 @@ table {
     width: 80%;
     margin: auto;
     padding-top: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
 }
 
 .projects-row img{
-    width: 320px;
+    height: 194px;
     border: 1px solid #BDBDBD;
 }
 
