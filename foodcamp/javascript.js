@@ -24,9 +24,22 @@ function verify() {
         if(bebida !== null){
             if(sobremesa !== null){
                 cart.classList.add('carrinho-cheio');
+                document.querySelector('.texto-carrinho').innerHTML = "Fechar pedido";
+            }
+            else{
+                document.querySelector('.texto-carrinho').innerHTML = "Escolha 3 itens para prosseguir";
             }
         }
     }
 }
 
+
 setInterval(verify,300);
+
+function finishclick(){
+    if (document.querySelector('.texto-carrinho').innerHTML == "Fechar pedido"){
+
+        console.log('Funciona');
+
+    }
+}
